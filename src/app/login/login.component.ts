@@ -15,7 +15,7 @@ export class LoginComponent {
     password: new FormControl()
   });
 
-  constructor(private loginService:LoginService,private router:Router,){}
+  constructor(private loginService:LoginService,private router:Router){}
 
   login() {
     console.log(this.loginForm);

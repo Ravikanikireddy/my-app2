@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class LoginService {
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  doLogin(data:any):Observable<any>{
-    return this.httpClient.post("https://reqres.in/api/login",data);
+  doLogin(data: any): Observable<any> {
+    return this.httpClient.post("https://reqres.in/api/login", data);
   }
-  
+
 }

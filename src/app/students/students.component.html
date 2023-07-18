@@ -1,0 +1,57 @@
+<h1 style="text-align: center;color:white;">Student Table</h1>
+<input type="text" [(ngModel)]="term" (keypress)="getFilteredContents()">
+<label style="color:white;">report</label>
+<select [(ngModel)]="report">
+    <option value="">select report</option>
+    <option>id</option>
+    <option>name</option>
+    <option>phone</option>
+</select>
+<select [(ngModel)]="order">
+    <option value="">select order</option>
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<button (click)="getSortedContents()">Sort</button><br>
+<label for="" style="color:white;">Pagination::</label>
+<select name="" id="" [(ngModel)]="limit">
+        
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+</select>
+<select name="" id="" [(ngModel)]="page">
+            
+             <option>1</option>
+             <option>2</option>
+             <option>3</option>
+             <option>4</option>
+             <option>5</option>
+</select>
+<button (click)="getPageContents()">page</button><br><br>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>SL.NO.</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>City</th>
+            <th>ID</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let content of contents let i = index">
+            <td>{{i+1}}</td>
+            <td>{{content.name}}</td>
+            <td>{{content.phone}}</td>
+            <td>{{content.city}}</td>
+            <td>{{content.id}}</td>
+            <td>
+                <button (click)="deleteContents(content.id)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

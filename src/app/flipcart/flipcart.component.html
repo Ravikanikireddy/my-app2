@@ -1,0 +1,13 @@
+<h1 style="text-align: center;">Flipcart</h1>
+<div class="row ravi">
+     <div class="col-lg-3 col-md-4 col-sm-6 col-12 card " *ngFor="let product of products">
+        <img src="{{product.image}}" alt="" width="150px" height="120px">
+        <h6><span>Title:  </span>{{product.title}}</h6>
+        <h6><span>Price:  </span>{{product.price}}</h6>
+        <h6><span>Category:  </span> {{product.category}}</h6>
+        <h6><span>Rating:  </span> {{product.rating.rate}}</h6>
+        <h6><span>id:  </span> {{product.id}}</h6>
+        <h6><span>description:  </span> {{product.description}}</h6>
+        
+     </div>
+</div>

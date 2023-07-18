@@ -1,0 +1,19 @@
+<div class="container">
+   <div class="box">
+       <h1>"Body Mass Index"</h1>
+
+      <label for="">Height:</label>
+      <input type="number" placeholder="cm" [(ngModel)]="height"><br>
+
+     <label for="">Weight:</label>
+     <input type="number" placeholder="kg" [(ngModel)]="weight"><br>
+
+      <button (click)="calc()">Calculate</button>
+
+
+      <h1>Result is: {{result}} in kgs</h1>
+
+   </div>   
+</div>
+
+

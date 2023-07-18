@@ -1,0 +1,13 @@
+
+    <div class="child" *ngFor="let collect of collects">
+              <p><span>id:</span>{{collect.id}}</p>
+              <p><span>Collect Name:</span>{{collect.name}}</p>
+              <p><span>URL:</span>
+                <img src="{{collect.url}}" alt="" width="{{collect.width}}" height="{{collect.height}}">
+              </p>
+              <p><span>width:</span>{{collect.width}}</p>
+              <p><span>height:</span>{{collect.height}}</p>
+              <p><span>box-count:</span>{{collect.box_count}}</p>
+              <p><span>captions</span>{{collect.captions}}</p>
+    </div>
+    

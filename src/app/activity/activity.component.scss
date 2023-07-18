@@ -1,0 +1,24 @@
+.parent {
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div {
+    width: 40%;
+    height: 50%;
+    background-color: aqua;
+    padding: 10px;
+}
+
+span {
+    color: red;
+}
+
+button {
+    position: relative;
+    top: 20px;
+}

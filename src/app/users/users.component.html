@@ -1,0 +1,31 @@
+<div class="container">
+<div class="parent" *ngFor="let detail of details">
+    <div class="personal">
+        <h2>Personal details</h2>
+        <h6><span>ID::</span>{{detail.id}}</h6>
+        <h6><span>Name::</span>{{detail.name}}</h6>
+        <h6><span>UserName::</span>{{detail.username}}</h6>
+        <h6><span>Email::</span>{{detail.email}}</h6>
+    </div>
+    <div class="address">
+        <h2>Address</h2>
+            <h6><span>Street::</span>{{detail.address.street}}</h6>
+            <h6><span>Suite::</span>{{detail.address.suite}}</h6>
+            <h6><span>City::</span>{{detail.address.city}}</h6>
+            <h6><span>ZipCode::</span>{{detail.address.zipcode}}</h6>
+            <h6><span>Lat::</span>{{detail.address.geo.lat}}</h6>
+            <h6><span>Lng::</span>{{detail.address.geo.lng}}</h6>
+            <h6><span>Phone::</span>{{detail.phone}}</h6>
+            <h6><span>Website::</span>{{detail.website}}</h6>
+    </div>
+    <div class="company">
+               <h2>company</h2>
+              <h6><span>Name::</span>{{detail.company.name}}</h6>
+              <h6><span>CatchPhrse::</span>{{detail.company.catchPhrase}}</h6>
+               <h6><span>BS::</span>{{detail.company.bs}}</h6>
+              
+    </div>
+
+
+</div>
+</div>

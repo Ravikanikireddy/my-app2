@@ -1,0 +1,37 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.parent{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    background-color: aliceblue;
+    justify-content: space-evenly;
+    
+}
+.personal{
+    height: 100%;
+    width: 30%;
+}
+.address{
+    height: 100%;
+    width: 30%;
+    
+    
+}
+.company{
+    height: 100%;
+    width: 30%;
+}
+h2{
+    color:orangered;
+}
+span{
+    font-size:15px;
+    color:#ff9900;
+}
+.parent:nth-child(even){
+    background-color: aqua;
+}

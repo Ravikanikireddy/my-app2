@@ -1,0 +1,14 @@
+<h1 style="text-align: center;">Gmail</h1>
+<div class="parent">
+     <div class="child" *ngFor="let content of contents">
+          <div class="image">
+               <img src="assets/icici.png" alt="" width="100%" height="100%">
+          </div>
+          <div class="content" [ngStyle]="{'font-weight':content.completed>=true?100:900}">
+               <p><span>User ID::</span>{{content.userId}}</p>
+               <p><span>ID::</span>{{content.id}}</p>
+               <p><span>Title::</span>{{content.title}}</p>
+               <p><span>Completed::</span>{{content.completed}}</p>
+          </div>
+     </div>
+</div>

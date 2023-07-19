@@ -8,7 +8,7 @@ export const authenticationGuard: CanActivateFn = (route, state) => {
   else{
     alert("you need to login to access this page!");
     var router:Router = new Router();
-    router.navigateByUrl('/login')
+    router.navigateByUrl('/login');
     return false;
   }
 };

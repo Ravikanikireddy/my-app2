@@ -1,4 +1,4 @@
-<div>
+<div class="parent">
 <h1>Create User</h1><br>
 <form [formGroup]="userForm">
      
@@ -17,6 +17,22 @@
     <label>Email:</label>
     <input type="text" formControlName="email">
     <br>
+
+    <div class="child" formGroupName="address">
+          
+        <label>Hno:</label>
+        <input type="text" formControlName="hno">
+        <br>
+
+        <label>state:</label>
+        <input type="text" formControlName="state">
+        <br>
+
+        <label>pin:</label>
+        <input type="text" formControlName="pin">
+        <br>
+
+    </div>
 
      <button (click)="submit()" class="btn btn-warning">Submit</button>
     

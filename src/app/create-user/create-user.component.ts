@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormArray, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-create-user',
@@ -7,22 +7,42 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./create-user.component.scss']
 })
 export class CreateUserComponent {
-public userForm:FormGroup = new FormGroup({
-  name:new FormControl(),
-  age:new FormControl(),
-  phone:new FormControl(),
-  email:new FormControl(),
-  address:new FormGroup({
-    hno:new FormControl(),
-    state:new FormControl(),
-    pin:new FormControl()
-  }),
-  type:new FormControl(),
-  busfee:new FormControl(),
-  hostelfee:new FormControl()
+  public userForm: FormGroup = new FormGroup({
+    name: new FormControl(),
+    age: new FormControl(),
+    phone: new FormControl(),
+    email: new FormControl(),
+    address: new FormGroup({
+      hno: new FormControl(),
+      state: new FormControl(),
+      pin: new FormControl()
+    }),
+    type: new FormControl(),
+    busfee: new FormControl(),
+    hostelfee: new FormControl(),
+    cards: new FormArray([])
 
-});
-submit(){
-  console.log(this.userForm);
-}
+  });
+
+  get cardsFormArray() {
+    return this.userForm.get('cards') as FormArray;
+  }
+
+  addCard() {
+    this.cardsFormArray.push(
+      new FormGroup({
+        no: new FormControl(),
+        exp: new FormControl(),
+        cvv: new FormControl()
+      })
+    )
+  }
+
+  deletecard(i: number) {
+    this.cardsFormArray.removeAt(i);
+  }
+
+  submit() {
+    console.log(this.userForm);
+  }
 }

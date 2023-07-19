@@ -16,7 +16,11 @@ public userForm:FormGroup = new FormGroup({
     hno:new FormControl(),
     state:new FormControl(),
     pin:new FormControl()
-  })
+  }),
+  type:new FormControl(),
+  busfee:new FormControl(),
+  hostelfee:new FormControl()
+
 });
 submit(){
   console.log(this.userForm);

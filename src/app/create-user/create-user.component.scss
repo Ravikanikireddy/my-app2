@@ -3,7 +3,8 @@
     height:auto;
     background-color:aqua;
     padding:30px;
-    margin:auto;
+    margin:30px;
+    border-radius:15px;
 }
 label{
 
@@ -11,7 +12,17 @@ label{
     width:100px;
     height:50px;
 }
-input:focus{
+input:hover{
     cursor:pointer;
     background-color: blanchedalmond;
+}
+.cards{
+    width:400px;
+    height:300px;
+    
+    padding:15px;
+    margin-bottom:20px;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    
 }

@@ -54,8 +54,8 @@
         </div>
 
         <button (click)="addCard()" class="btn btn-primary">add card</button>
-        <div formArrayName="cards">
-            <div *ngFor="let card of cardsFormArray.controls; let i = index">
+        <div formArrayName="cards"><br>
+            <div *ngFor="let card of cardsFormArray.controls; let i = index" class="cards">
                 <div formGroupName="{{i}}">
                     
                     <h1>card{{i+1}}</h1>

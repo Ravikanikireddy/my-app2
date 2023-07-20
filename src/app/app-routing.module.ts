@@ -31,6 +31,7 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { authenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductformComponent } from './create-productform/create-productform.component';
+import { CreateRaviComponent } from './create-ravi/create-ravi.component';
 
 
 const routes: Routes = [
@@ -62,7 +63,9 @@ const routes: Routes = [
        {path:'create-bank',component:CreateBankComponent},
        {path:'create-student',component:CreateStudentComponent},
        {path:'create-user',component:CreateUserComponent},
-       {path:'create-productform',component:CreateProductformComponent}
+       {path:'create-productform',component:CreateProductformComponent},
+       {path:'create-ravi',component:CreateRaviComponent}
+      
        ]},
      {path:'',component:LoginComponent },
      {path:'**',component:PagenotfoundComponent}

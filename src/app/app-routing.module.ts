@@ -32,6 +32,7 @@ import { authenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductformComponent } from './create-productform/create-productform.component';
 import { CreateRaviComponent } from './create-ravi/create-ravi.component';
+import { notifyGuard } from './notify.guard';
 
 
 const routes: Routes = [
@@ -62,8 +63,8 @@ const routes: Routes = [
        {path:'create-vehicle',component:CreateVehicleComponent},
        {path:'create-bank',component:CreateBankComponent},
        {path:'create-student',component:CreateStudentComponent},
-       {path:'create-user',component:CreateUserComponent},
-       {path:'create-productform',component:CreateProductformComponent},
+       {path:'create-user',component:CreateUserComponent,canDeactivate:[notifyGuard]},
+       {path:'create-productform',component:CreateProductformComponent,canDeactivate:[notifyGuard]},
        {path:'create-ravi',component:CreateRaviComponent}
       
        ]},

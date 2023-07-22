@@ -33,6 +33,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductformComponent } from './create-productform/create-productform.component';
 import { CreateRaviComponent } from './create-ravi/create-ravi.component';
 import { notifyGuard } from './notify.guard';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 const routes: Routes = [
@@ -61,11 +62,13 @@ const routes: Routes = [
        {path:'users',component:UsersComponent},
        {path:'students',component:StudentsComponent},
        {path:'create-vehicle',component:CreateVehicleComponent},
+       {path:'edit-vehicle/:id',component:CreateVehicleComponent},
        {path:'create-bank',component:CreateBankComponent},
        {path:'create-student',component:CreateStudentComponent},
        {path:'create-user',component:CreateUserComponent,canDeactivate:[notifyGuard]},
        {path:'create-productform',component:CreateProductformComponent,canDeactivate:[notifyGuard]},
-       {path:'create-ravi',component:CreateRaviComponent}
+       {path:'create-ravi',component:CreateRaviComponent},
+       {path:'vehicle-details/:id',component:VehicleDetailsComponent}
       
        ]},
      {path:'',component:LoginComponent },

@@ -36,6 +36,7 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateProductformComponent } from './create-productform/create-productform.component';
 import { CreateRaviComponent } from './create-ravi/create-ravi.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 
 
@@ -73,6 +74,7 @@ import { CreateRaviComponent } from './create-ravi/create-ravi.component';
     CreateUserComponent,
     CreateProductformComponent,
     CreateRaviComponent,
+    VehicleDetailsComponent,
     
   ],
   imports: [

@@ -36,7 +36,7 @@
             <th>color</th>
             <th>image</th>
             <th>id</th>
-            <th>button</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -52,6 +52,8 @@
             </td>
             <td>{{vehicle.id}}</td>
             <td>
+                <button class="btn btn-warning" (click)="view(vehicle.id)">view</button><br>
+                <button (click)="edit(vehicle.id)" class="btn btn-info">Edit</button><br>
                 <button (click)="deleteVehicles(vehicle.id)" class="btn btn-danger">delete</button>
             </td>
         </tr>

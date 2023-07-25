@@ -45,6 +45,7 @@
              <p *ngIf="userForm.get('email')?.errors?.['required']">email is required</p>
              <p *ngIf="userForm.get('email')?.errors?.['email']">Invalid email</p>
              <p *ngIf="userForm.get('email')?.errors?.['domainValidator']">only capgemini mail accepted</p>
+            
         </div> 
         <br>
 
@@ -57,11 +58,12 @@
             <label>state:</label>
             <input type="text" formControlName="state">
             
-            <!-- <div class="text text-danger" *ngIf="userForm.get('address')?.get('state')?.invalid && userForm.get('address')?.get('state')?.touched">
+               <div class="text text-danger" *ngIf="userForm.get('address')?.get('state')?.invalid && userForm.get('address')?.get('state')?.touched">
                   <p *ngIf="userForm.get('address')?.get('state')?.errors?.['required']">State is Required</p>
                   <p *ngIf="userForm.get('address')?.get('state')?.errors?.['minlength']">Min 3 characters are required</p>
-                  <p *ngIf="userForm.get('address')?.get('state')?.errors?.['maxlength']">Max 7 characters are required</p>
-            </div> -->
+                  <p *ngIf="userForm.get('address')?.get('state')?.errors?.['maxlength']">Max 10 characters are required</p>
+                  <p *ngIf="userForm.get('address')?.get('state')?.errors?.['stateValidator']">only ts & ap accepted</p>
+            </div>
             <br>
 
             <label>pin:</label>

@@ -40,6 +40,7 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { PricePipe } from './price.pipe';
 import { PercentagePipe } from './percentage.pipe';
 import { PhonePipe } from './phone.pipe';
+import { ImpDirective } from './imp.directive';
 
 
 
@@ -81,6 +82,7 @@ import { PhonePipe } from './phone.pipe';
     PricePipe,
     PercentagePipe,
     PhonePipe,
+    ImpDirective,
     
   ],
   imports: [

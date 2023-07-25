@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ProductsService } from '../products.service';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-products',
@@ -7,13 +8,13 @@ import { ProductsService } from '../products.service';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent {
-  public products:any = [];
+  public products:Product[] = [];
 constructor(private productsService:ProductsService){
   productsService.getProducts().subscribe(
-    (data:any)=>{
+    (data:Product[])=>{
     this.products = data;
     },
-    (err:any)=>{
+    (err:Product[])=>{
       alert("internal Server error")
     }
   )

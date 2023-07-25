@@ -41,10 +41,11 @@
         <label>Email:</label>
         <input type="email" formControlName="email">
        
-        <!-- <div class="text text-danger" *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
+        <div class="text text-danger" *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
              <p *ngIf="userForm.get('email')?.errors?.['required']">email is required</p>
              <p *ngIf="userForm.get('email')?.errors?.['email']">Invalid email</p>
-        </div> -->
+             <p *ngIf="userForm.get('email')?.errors?.['domainValidator']">only capgemini mail accepted</p>
+        </div> 
         <br>
 
         <div class="child" formGroupName="address">

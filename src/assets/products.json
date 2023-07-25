@@ -1,0 +1,23 @@
+[
+    {
+        "name":"pen",
+        "price":20,
+        "rating":5,
+        "discount":40,
+        "contact":"9182231785"
+    },
+    {
+        "name":"mobile",
+        "price":12000,
+        "rating":4,
+        "discount":65,
+        "contact":8374982764
+    },
+    {
+        "name":"Dress",
+        "price":3500,
+        "rating":4.8,
+        "discount":72,
+        "contact":6304885823
+    }
+]

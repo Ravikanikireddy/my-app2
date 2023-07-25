@@ -1,0 +1,26 @@
+
+<div class="prducts">
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th>SL.NO.</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Rating</th>
+                <th>Discount</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products let i=index">
+                <td>{{i+1}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.rating}}</td>
+                <td>{{product.discount | percentage}}</td>
+                <td>{{product.contact | phone}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

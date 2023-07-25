@@ -41,6 +41,7 @@ import { PricePipe } from './price.pipe';
 import { PercentagePipe } from './percentage.pipe';
 import { PhonePipe } from './phone.pipe';
 import { ImpDirective } from './imp.directive';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -83,6 +84,7 @@ import { ImpDirective } from './imp.directive';
     PercentagePipe,
     PhonePipe,
     ImpDirective,
+    ProductsComponent,
     
   ],
   imports: [

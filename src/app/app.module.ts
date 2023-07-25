@@ -38,6 +38,8 @@ import { CreateProductformComponent } from './create-productform/create-productf
 import { CreateRaviComponent } from './create-ravi/create-ravi.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { PricePipe } from './price.pipe';
+import { PercentagePipe } from './percentage.pipe';
+import { PhonePipe } from './phone.pipe';
 
 
 
@@ -77,6 +79,8 @@ import { PricePipe } from './price.pipe';
     CreateRaviComponent,
     VehicleDetailsComponent,
     PricePipe,
+    PercentagePipe,
+    PhonePipe,
     
   ],
   imports: [

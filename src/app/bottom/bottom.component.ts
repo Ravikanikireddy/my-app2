@@ -7,7 +7,7 @@ import { AppComponent } from '../app.component';
   styleUrls: ['./bottom.component.scss']
 })
 export class BottomComponent {
-  // @Input() public ac:number = 0;
+
   @Input() public num1:number = 0;
   @Input() public num2:number = 0;
  

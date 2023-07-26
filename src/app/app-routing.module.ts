@@ -39,6 +39,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ItemComponent } from './item/item.component';
 import { NavComponent } from './nav/nav.component';
 import { CartComponent } from './cart/cart.component';
+import { TopComponent } from './top/top.component';
 
 
 const routes: Routes = [
@@ -78,7 +79,8 @@ const routes: Routes = [
        {path:'parent',component:ParentComponent},
        {path:'item',component:ItemComponent},
        {path:'nav',component:NavComponent},
-       {path:'cart',component:CartComponent}
+       {path:'cart',component:CartComponent},
+       {path:'top',component:TopComponent},
       
        ]},
      {path:'',component:LoginComponent },

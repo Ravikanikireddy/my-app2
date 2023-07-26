@@ -47,6 +47,8 @@ import { ChildComponent } from './child/child.component';
 import { ItemComponent } from './item/item.component';
 import { NavComponent } from './nav/nav.component';
 import { CartComponent } from './cart/cart.component';
+import { TopComponent } from './top/top.component';
+import { BottomComponent } from './bottom/bottom.component';
 
 
 
@@ -95,6 +97,8 @@ import { CartComponent } from './cart/cart.component';
     ItemComponent,
     NavComponent,
     CartComponent,
+    TopComponent,
+    BottomComponent,
     
   ],
   imports: [

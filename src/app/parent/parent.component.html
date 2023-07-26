@@ -3,6 +3,7 @@
 
 <p>parent works!</p>
 <input type="text number" [(ngModel)]="ap">
+<p>bp:{{bp}}</p>
 
 <app-child [ac]="ap" (bEvent)="catch($event)"></app-child>
 

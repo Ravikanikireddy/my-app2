@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 public ap:number = 0;
+public bp:number = 0;
+
+catch(value:any){
+  this.bp = value;
+}
 }

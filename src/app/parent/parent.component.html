@@ -4,6 +4,6 @@
 <p>parent works!</p>
 <input type="text number" [(ngModel)]="ap">
 
-<app-child [ac]="ap"></app-child>
+<app-child [ac]="ap" (bEvent)="catch($event)"></app-child>
 
 </div>

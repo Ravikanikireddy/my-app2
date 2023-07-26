@@ -44,6 +44,9 @@ import { ImpDirective } from './imp.directive';
 import { ProductsComponent } from './products/products.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ItemComponent } from './item/item.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -89,6 +92,9 @@ import { ChildComponent } from './child/child.component';
     ProductsComponent,
     ParentComponent,
     ChildComponent,
+    ItemComponent,
+    NavComponent,
+    CartComponent,
     
   ],
   imports: [

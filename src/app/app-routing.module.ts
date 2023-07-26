@@ -36,6 +36,9 @@ import { notifyGuard } from './notify.guard';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ProductsComponent } from './products/products.component';
 import { ParentComponent } from './parent/parent.component';
+import { ItemComponent } from './item/item.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
 
 
 const routes: Routes = [
@@ -72,7 +75,10 @@ const routes: Routes = [
        {path:'create-ravi',component:CreateRaviComponent},
        {path:'vehicle-details/:id',component:VehicleDetailsComponent},
        {path:'products',component:ProductsComponent},
-       {path:'parent',component:ParentComponent}
+       {path:'parent',component:ParentComponent},
+       {path:'item',component:ItemComponent},
+       {path:'nav',component:NavComponent},
+       {path:'cart',component:CartComponent}
       
        ]},
      {path:'',component:LoginComponent },

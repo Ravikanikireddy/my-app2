@@ -42,6 +42,8 @@ import { PercentagePipe } from './percentage.pipe';
 import { PhonePipe } from './phone.pipe';
 import { ImpDirective } from './imp.directive';
 import { ProductsComponent } from './products/products.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -85,6 +87,8 @@ import { ProductsComponent } from './products/products.component';
     PhonePipe,
     ImpDirective,
     ProductsComponent,
+    ParentComponent,
+    ChildComponent,
     
   ],
   imports: [

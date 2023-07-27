@@ -41,52 +41,57 @@ import { NavComponent } from './nav/nav.component';
 import { CartComponent } from './cart/cart.component';
 import { TopComponent } from './top/top.component';
 import { Parent1Component } from './parent1/parent1.component';
+import { ExternalComponent } from './external/external.component';
+
 
 
 const routes: Routes = [
-     {path:'login',component:LoginComponent} ,             
-     {path:'dashboard',component:DashboardComponent, canActivate:[authenticationGuard],children:[
-       {path:'home',component:HomeComponent},
-       {path:'info',component:InfoComponent},
-       {path:'variable',component:VariableComponent},
-       {path:'interpolation',component:InterpolationComponent},
-       {path:'eventbinding',component:EventbindingComponent},
-       {path:'twowaybinding',component:TwowaybindingComponent},
-       {path:'calculator',component:CalculatorComponent},
-       {path:'rectangle',component:RectangleComponent},
-       {path:'circle',component:CircleComponent},
-       {path:'bmi',component:BmiComponent},
-       {path:'structural-directives',component:StructuralDirectivesComponent},
-       {path:'attribute-directives',component:AttributeDirectivesComponent},
-       {path:'marksheet',component:MarksheetComponent},
-       {path:'vehicle',component:VehicleComponent},
-       {path:'bank',component:BankComponent},
-       {path:'school',component:SchoolComponent},
-       {path:'flipcart',component:FlipcartComponent},
-       {path:'mail',component:MailComponent},
-       {path:'activity',component:ActivityComponent},
-       {path:'memes',component:MemesComponent},
-       {path:'users',component:UsersComponent},
-       {path:'students',component:StudentsComponent},
-       {path:'create-vehicle',component:CreateVehicleComponent},
-       {path:'edit-vehicle/:id',component:CreateVehicleComponent},
-       {path:'create-bank',component:CreateBankComponent},
-       {path:'create-student',component:CreateStudentComponent},
-       {path:'create-user',component:CreateUserComponent,canDeactivate:[notifyGuard]},
-       {path:'create-productform',component:CreateProductformComponent,canDeactivate:[notifyGuard]},
-       {path:'create-ravi',component:CreateRaviComponent},
-       {path:'vehicle-details/:id',component:VehicleDetailsComponent},
-       {path:'products',component:ProductsComponent},
-       {path:'parent',component:ParentComponent},
-       {path:'item',component:ItemComponent},
-       {path:'nav',component:NavComponent},
-       {path:'cart',component:CartComponent},
-       {path:'top',component:TopComponent},
-       {path:'parent1',component:Parent1Component},
-      
-       ]},
-     {path:'',component:LoginComponent },
-     {path:'**',component:PagenotfoundComponent}
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'dashboard', component: DashboardComponent, canActivate: [authenticationGuard], children: [
+      { path: 'home', component: HomeComponent },
+      { path: 'info', component: InfoComponent },
+      { path: 'variable', component: VariableComponent },
+      { path: 'interpolation', component: InterpolationComponent },
+      { path: 'eventbinding', component: EventbindingComponent },
+      { path: 'twowaybinding', component: TwowaybindingComponent },
+      { path: 'calculator', component: CalculatorComponent },
+      { path: 'rectangle', component: RectangleComponent },
+      { path: 'circle', component: CircleComponent },
+      { path: 'bmi', component: BmiComponent },
+      { path: 'structural-directives', component: StructuralDirectivesComponent },
+      { path: 'attribute-directives', component: AttributeDirectivesComponent },
+      { path: 'marksheet', component: MarksheetComponent },
+      { path: 'vehicle', component: VehicleComponent },
+      { path: 'bank', component: BankComponent },
+      { path: 'school', component: SchoolComponent },
+      { path: 'flipcart', component: FlipcartComponent },
+      { path: 'mail', component: MailComponent },
+      { path: 'activity', component: ActivityComponent },
+      { path: 'memes', component: MemesComponent },
+      { path: 'users', component: UsersComponent },
+      { path: 'students', component: StudentsComponent },
+      { path: 'create-vehicle', component: CreateVehicleComponent },
+      { path: 'edit-vehicle/:id', component: CreateVehicleComponent },
+      { path: 'create-bank', component: CreateBankComponent },
+      { path: 'create-student', component: CreateStudentComponent },
+      { path: 'create-user', component: CreateUserComponent, canDeactivate: [notifyGuard] },
+      { path: 'create-productform', component: CreateProductformComponent, canDeactivate: [notifyGuard] },
+      { path: 'create-ravi', component: CreateRaviComponent },
+      { path: 'vehicle-details/:id', component: VehicleDetailsComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'parent', component: ParentComponent },
+      { path: 'item', component: ItemComponent },
+      { path: 'nav', component: NavComponent },
+      { path: 'cart', component: CartComponent },
+      { path: 'top', component: TopComponent },
+      { path: 'parent1', component: Parent1Component },
+      { path: 'external', component: ExternalComponent },
+
+    ]
+  },
+  { path: '', component: LoginComponent },
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({

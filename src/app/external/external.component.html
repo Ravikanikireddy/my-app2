@@ -1,0 +1,23 @@
+<div class="parent">
+      
+    <div class="child">
+        <h1>parent->Child && child->parent</h1>
+        <div class="child1">
+            <label>Value::</label>
+            <input type="text" [(ngModel)]="num1">
+        </div>
+        <div class="child2">
+            <p><span>display2::</span>{{num2}}</p>
+        </div>
+        <div class="child3">
+            <app-internal [display]="num1" (eventEmitter)="catch($event)"></app-internal>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+

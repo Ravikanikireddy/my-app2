@@ -51,6 +51,9 @@ import { TopComponent } from './top/top.component';
 import { BottomComponent } from './bottom/bottom.component';
 import { Parent1Component } from './parent1/parent1.component';
 import { Child1Component } from './child1/child1.component';
+import { ExternalComponent } from './external/external.component';
+import { InternalComponent } from './internal/internal.component';
+
 
 
 
@@ -103,6 +106,10 @@ import { Child1Component } from './child1/child1.component';
     BottomComponent,
     Parent1Component,
     Child1Component,
+    ExternalComponent,
+    InternalComponent,
+    
+    
     
   ],
   imports: [

@@ -47,6 +47,7 @@ import { AboutCeoComponent } from './about/about-ceo/about-ceo.component';
 
 
 
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
@@ -89,12 +90,16 @@ const routes: Routes = [
       { path: 'top', component: TopComponent },
       { path: 'parent1', component: Parent1Component },
       { path: 'external', component: ExternalComponent },
-      {path:'about-company',component:AboutCompanyComponent},
-      {path:'about-ceo',component:AboutCeoComponent},
+      { path: 'about-company', component: AboutCompanyComponent },
+      { path: 'about-ceo', component: AboutCeoComponent },
       {
         path: 'contact',
         loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
-      }
+      },
+      {
+        path: 'payments',
+        loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+      },
 
     ]
   },
@@ -103,7 +108,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {preloadingStrategy:PreloadAllModules})],
+  imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

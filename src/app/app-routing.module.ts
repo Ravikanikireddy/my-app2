@@ -90,7 +90,11 @@ const routes: Routes = [
       { path: 'parent1', component: Parent1Component },
       { path: 'external', component: ExternalComponent },
       {path:'about-company',component:AboutCompanyComponent},
-      {path:'about-ceo',component:AboutCeoComponent}
+      {path:'about-ceo',component:AboutCeoComponent},
+      {
+        path: 'contact',
+        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
+      }
 
     ]
   },

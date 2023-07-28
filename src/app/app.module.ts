@@ -53,6 +53,7 @@ import { Parent1Component } from './parent1/parent1.component';
 import { Child1Component } from './child1/child1.component';
 import { ExternalComponent } from './external/external.component';
 import { InternalComponent } from './internal/internal.component';
+import { AboutModule } from './about/about.module';
 
 
 
@@ -117,7 +118,8 @@ import { InternalComponent } from './internal/internal.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

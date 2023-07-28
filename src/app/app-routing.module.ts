@@ -42,6 +42,8 @@ import { CartComponent } from './cart/cart.component';
 import { TopComponent } from './top/top.component';
 import { Parent1Component } from './parent1/parent1.component';
 import { ExternalComponent } from './external/external.component';
+import { AboutCompanyComponent } from './about/about-company/about-company.component';
+import { AboutCeoComponent } from './about/about-ceo/about-ceo.component';
 
 
 
@@ -87,6 +89,8 @@ const routes: Routes = [
       { path: 'top', component: TopComponent },
       { path: 'parent1', component: Parent1Component },
       { path: 'external', component: ExternalComponent },
+      {path:'about-company',component:AboutCompanyComponent},
+      {path:'about-ceo',component:AboutCeoComponent}
 
     ]
   },

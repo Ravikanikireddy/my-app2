@@ -1,3 +1,4 @@
+import { ElementRef } from '@angular/core';
 import { ImpDirective } from './imp.directive';
 
 describe('ImpDirective', () => {

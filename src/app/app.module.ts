@@ -54,6 +54,9 @@ import { Child1Component } from './child1/child1.component';
 import { ExternalComponent } from './external/external.component';
 import { InternalComponent } from './internal/internal.component';
 import { AboutModule } from './about/about.module';
+import { CartsComponent } from './carts/carts.component';
+import { ItemsComponent } from './items/items.component';
+import { NavsComponent } from './navs/navs.component';
 
 
 
@@ -109,6 +112,9 @@ import { AboutModule } from './about/about.module';
     Child1Component,
     ExternalComponent,
     InternalComponent,
+    CartsComponent,
+    ItemsComponent,
+    NavsComponent,
     
     
     
@@ -125,3 +131,11 @@ import { AboutModule } from './about/about.module';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+
+
+
+

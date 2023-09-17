@@ -44,6 +44,9 @@ import { Parent1Component } from './parent1/parent1.component';
 import { ExternalComponent } from './external/external.component';
 import { AboutCompanyComponent } from './about/about-company/about-company.component';
 import { AboutCeoComponent } from './about/about-ceo/about-ceo.component';
+import { ItemsComponent } from './items/items.component';
+import { NavsComponent } from './navs/navs.component';
+import { CartsComponent } from './carts/carts.component';
 
 
 
@@ -100,7 +103,9 @@ const routes: Routes = [
         path: 'payments',
         loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
       },
-
+      { path: 'items', component: ItemsComponent },
+      { path: 'navs', component: NavsComponent },
+      { path: 'carts', component: CartsComponent }
     ]
   },
   { path: '', component: LoginComponent },
